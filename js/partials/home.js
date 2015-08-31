@@ -16,7 +16,7 @@ $(function () {
   });
 
   $(".tabs__body").twentytwenty({
-    default_offset_pct: 0.96
+    default_offset_pct: 0.50
   });
 
   var fixedContentArrow = $('.twentytwenty-handle').offset().top - 100;

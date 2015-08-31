@@ -23,7 +23,12 @@ $(function () {
   });
 
   // Add ability to touch and drag range slider on mobile device
-  $('.form__range').draggable();
+
+  if($('.form__range').length) {
+    if(jQuery.browser.mobile) {
+       $('.form__range').draggable();
+    }
+  }
 
   // Initialize range slider
   $('.form__range').slider({

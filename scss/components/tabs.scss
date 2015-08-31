@@ -42,6 +42,10 @@
   }
 
   .tabs__body {
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;  
 
     .tabs__content {
       overflow: hidden;

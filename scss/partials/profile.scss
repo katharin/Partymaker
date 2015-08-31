@@ -265,7 +265,11 @@
 
     @include screen(xlDesktop) {
       width: 33.3%;
-      padding: 0 24px 0 0;
+      padding: 0 24px 0 24px;
+
+      &:nth-child(1) {
+        padding: 0 24px 0 24px!important;
+      }
 
       &:nth-child(2n) {
         padding: 0 24px 0 24px;
@@ -273,6 +277,10 @@
 
       &:nth-child(3n) {
         padding: 0 0 0 24px;
+      }
+
+      &:nth-child(3n+1) {
+        padding: 0 24px 0 24px;
       }
     }
   }
@@ -477,13 +485,14 @@
       @include border-radius(25px);
       font-family: $light;
       margin: 78px auto 0;
-      max-width: 382px;
+      max-width: 90%;
       text-align: center;
       clear: both;
-      background: url("../images/icons/icon-connect-soundcloud.png") no-repeat 25px 50%;
+      background: url("../images/icons/icon-connect-soundcloud.png") no-repeat 15px 50%;
 
       @include screen(tablet) {
         @include vertical-align-one-line(55px);
+        max-width: 382px;
         font-size: 20px;
         margin-top: 93px;
         padding-left: 30px;

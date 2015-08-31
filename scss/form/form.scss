@@ -25,7 +25,7 @@
 
   .form__line-inner {
     padding: 0 15px;
-    height: 76px;
+    min-height: 76px;
     display: table;
     width: 100%;
     font-family: $light;

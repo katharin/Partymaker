@@ -222,7 +222,7 @@ textarea {
     -webkit-animation-duration: 3s; }
   .form__line .form__line-inner {
     padding: 0 15px;
-    height: 76px;
+    min-height: 76px;
     display: table;
     width: 100%;
     font-family: "MyriadPro-Light";
@@ -599,81 +599,81 @@ textarea {
       color: #666;
       margin: 0 40px; } }
 
-.footer--sign-up {
+.footer.footer--sign-up {
   border-top: 1px solid #a8a8a8;
   background: #f9f9f9;
   text-align: right;
   padding: 10px;
   position: relative;
   height: 44px;
-  z-index: -1;
+  z-index: 0;
   margin-top: -44px; }
   @media (min-width: 768px) {
-    .footer--sign-up {
+    .footer.footer--sign-up {
       padding: 18px 40px;
       border: 0;
       height: 100px;
       margin-top: -100px; } }
   @media (min-width: 1025px) {
-    .footer--sign-up {
+    .footer.footer--sign-up {
       padding: 25px 9%;
       height: 110px;
       margin-top: -110px; } }
-  .footer--sign-up .pagination {
+  .footer.footer--sign-up .pagination {
     color: #008db0;
     font-size: 18px;
     display: block;
     position: absolute;
     font-family: "MyriadPro-Light";
     top: 10px; }
-    .footer--sign-up .pagination--next {
+    .footer.footer--sign-up .pagination--next {
       right: 10px; }
       @media (min-width: 768px) {
-        .footer--sign-up .pagination--next {
+        .footer.footer--sign-up .pagination--next {
           right: 70px; } }
       @media (min-width: 1025px) {
-        .footer--sign-up .pagination--next {
+        .footer.footer--sign-up .pagination--next {
           right: 11%; } }
-    .footer--sign-up .pagination--prev {
+    .footer.footer--sign-up .pagination--prev {
       left: 10px; }
       @media (min-width: 768px) {
-        .footer--sign-up .pagination--prev {
+        .footer.footer--sign-up .pagination--prev {
           left: 70px; } }
       @media (min-width: 1025px) {
-        .footer--sign-up .pagination--prev {
+        .footer.footer--sign-up .pagination--prev {
           left: 11%; } }
     @media (min-width: 768px) {
-      .footer--sign-up .pagination {
+      .footer.footer--sign-up .pagination {
         color: #999;
         font-size: 16px;
         top: 18px; } }
-  .footer--sign-up .pagination__name {
+  .footer.footer--sign-up .pagination__name {
     display: none;
     position: absolute; }
     @media (min-width: 768px) {
-      .footer--sign-up .pagination__name {
+      .footer.footer--sign-up .pagination__name {
         color: #008db0;
         font-size: 32px;
         display: block;
         font-family: "MyriadPro-Light";
         top: 40px; }
-        .footer--sign-up .pagination__name:after, .footer--sign-up .pagination__name:before {
+        .footer.footer--sign-up .pagination__name:after, .footer.footer--sign-up .pagination__name:before {
           content: "";
           display: block;
           position: absolute;
           top: 50%;
           margin-top: -9px; }
-        .footer--sign-up .pagination__name--next {
+        .footer.footer--sign-up .pagination__name--next {
           right: 40px;
           padding-right: 26px; }
-          .footer--sign-up .pagination__name--next:before {
+          .footer.footer--sign-up .pagination__name--next:before {
             width: 0;
             height: 0;
             border-style: solid;
             border-width: 8.5px 0 8.5px 9px;
             border-color: transparent transparent transparent #008db0;
             right: 0; }
-          .footer--sign-up .pagination__name--next:after {
+          .footer.footer--sign-up .pagination__name--next:after {
             width: 0;
             height: 0;
             border-style: solid;
@@ -681,33 +681,34 @@ textarea {
             border-color: transparent transparent transparent #f9f9f9;
             right: 2px; } }
     @media (min-width: 768px) and (min-width: 1025px) {
-      .footer--sign-up .pagination__name--next {
+      .footer.footer--sign-up .pagination__name--next {
         right: 9%; } }
     @media (min-width: 768px) {
-        .footer--sign-up .pagination__name--prev {
+        .footer.footer--sign-up .pagination__name--prev {
+          left: 9%;
           padding-left: 26px; }
-          .footer--sign-up .pagination__name--prev:before {
+          .footer.footer--sign-up .pagination__name--prev:before {
             width: 0;
             height: 0;
             border-style: solid;
             border-width: 8.5px 9px 8.5px 0;
             border-color: transparent #008db0 transparent transparent;
             left: 0; }
-          .footer--sign-up .pagination__name--prev:after {
+          .footer.footer--sign-up .pagination__name--prev:after {
             width: 0;
             height: 0;
             border-style: solid;
             border-width: 8.5px 9px 8.5px 0;
             border-color: transparent #f9f9f9 transparent transparent;
             left: 2px; } }
-  .footer--sign-up .footer__get-started {
+  .footer.footer--sign-up .footer__get-started {
     font-size: 18px;
     color: #008db0;
     display: block;
     position: absolute;
     right: 10px; }
     @media (min-width: 768px) {
-      .footer--sign-up .footer__get-started {
+      .footer.footer--sign-up .footer__get-started {
         font-size: 26px;
         color: #fff;
         position: absolute;
@@ -720,20 +721,20 @@ textarea {
         -moz-border-radius: 30px;
         -ms-border-radius: 30px;
         border-radius: 30px; }
-        .footer--sign-up .footer__get-started:after, .footer--sign-up .footer__get-started:before {
+        .footer.footer--sign-up .footer__get-started:after, .footer.footer--sign-up .footer__get-started:before {
           content: "";
           display: block;
           position: absolute;
           top: 50%;
           margin-top: -10px; }
-        .footer--sign-up .footer__get-started:before {
+        .footer.footer--sign-up .footer__get-started:before {
           width: 0;
           height: 0;
           border-style: solid;
           border-width: 8.5px 0 8.5px 9px;
           border-color: transparent transparent transparent #fff;
           right: 30px; }
-        .footer--sign-up .footer__get-started:after {
+        .footer.footer--sign-up .footer__get-started:after {
           width: 0;
           height: 0;
           border-style: solid;
@@ -741,7 +742,7 @@ textarea {
           border-color: transparent transparent transparent #68be80;
           right: 32px; } }
     @media (min-width: 1025px) {
-      .footer--sign-up .footer__get-started {
+      .footer.footer--sign-up .footer__get-started {
         right: 9%; } }
 
 .steps {
@@ -1489,11 +1490,15 @@ textarea {
   @media (min-width: 1680px) {
     .profile-events .listing {
       width: 33.3%;
-      padding: 0 24px 0 0; }
+      padding: 0 24px 0 24px; }
+      .profile-events .listing:nth-child(1) {
+        padding: 0 24px 0 24px !important; }
       .profile-events .listing:nth-child(2n) {
         padding: 0 24px 0 24px; }
       .profile-events .listing:nth-child(3n) {
-        padding: 0 0 0 24px; } }
+        padding: 0 0 0 24px; }
+      .profile-events .listing:nth-child(3n+1) {
+        padding: 0 24px 0 24px; } }
 .profile-events .more {
   margin: 0 20px; }
   @media (min-width: 768px) {
@@ -1695,15 +1700,16 @@ textarea {
       border-radius: 25px;
       font-family: "MyriadPro-Light";
       margin: 78px auto 0;
-      max-width: 382px;
+      max-width: 90%;
       text-align: center;
       clear: both;
-      background: url("../images/icons/icon-connect-soundcloud.png") no-repeat 25px 50%; }
+      background: url("../images/icons/icon-connect-soundcloud.png") no-repeat 15px 50%; }
       @media (min-width: 768px) {
         .profile-music .cloud .connect,
         .profile-photo .cloud .connect {
           height: 55px;
           line-height: 55px;
+          max-width: 382px;
           font-size: 20px;
           margin-top: 93px;
           padding-left: 30px;
@@ -1976,61 +1982,66 @@ textarea {
         padding: 13px 0 13px 36px; } }
     .tabs .tabs__head .tabs__item--active {
       color: #333; }
-.tabs .tabs__body .tabs__content {
-  overflow: hidden;
-  height: 0px;
-  position: relative;
-  opacity: 0;
-  transition: opacity 500ms; }
-  .tabs .tabs__body .tabs__content::after {
-    clear: both;
-    content: "";
-    display: table; }
-  @media (max-width: 1024px) {
-    .tabs .tabs__body .tabs__content {
-      clip: auto !important; } }
-  @media (min-width: 768px) {
-    .tabs .tabs__body .tabs__content {
-      padding: 0 17px; } }
-  @media (min-width: 1025px) {
-    .tabs .tabs__body .tabs__content {
-      padding: 0;
-      opacity: 1;
+.tabs .tabs__body {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto; }
+  .tabs .tabs__body .tabs__content {
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    opacity: 0;
+    transition: opacity 500ms; }
+    .tabs .tabs__body .tabs__content::after {
+      clear: both;
+      content: "";
+      display: table; }
+    @media (max-width: 1024px) {
+      .tabs .tabs__body .tabs__content {
+        clip: auto !important; } }
+    @media (min-width: 768px) {
+      .tabs .tabs__body .tabs__content {
+        padding: 0 17px; } }
+    @media (min-width: 1025px) {
+      .tabs .tabs__body .tabs__content {
+        padding: 0;
+        opacity: 1;
+        overflow: visible;
+        height: auto;
+        transition: none; }
+        .tabs .tabs__body .tabs__content.tabs__content--artists .tabs__title {
+          text-align: right; } }
+    .tabs .tabs__body .tabs__content--active {
       overflow: visible;
       height: auto;
-      transition: none; }
-      .tabs .tabs__body .tabs__content.tabs__content--artists .tabs__title {
-        text-align: right; } }
-  .tabs .tabs__body .tabs__content--active {
-    overflow: visible;
-    height: auto;
-    opacity: 1;
-    transition: opacity 500ms; }
-  .tabs .tabs__body .tabs__content .tabs__title {
-    font-size: 32px;
-    padding: 13px 0 27px 24px;
-    font-family: "MyriadPro-Light";
-    color: #333;
-    display: none; }
-    .tabs .tabs__body .tabs__content .tabs__title--sticked {
-      position: fixed;
+      opacity: 1;
+      transition: opacity 500ms; }
+    .tabs .tabs__body .tabs__content .tabs__title {
       font-size: 32px;
-      top: 0;
-      width: 100%;
-      z-index: 11;
-      background: rgba(255, 255, 255, 0.97); }
-    @media (min-width: 1025px) {
-      .tabs .tabs__body .tabs__content .tabs__title {
-        display: block;
-        padding-left: 116px;
-        padding-right: 116px; } }
-    @media (min-width: 1440px) {
-      .tabs .tabs__body .tabs__content .tabs__title {
-        padding: 35px 140px 41px 140px;
-        font-size: 52px; }
-        .tabs .tabs__body .tabs__content .tabs__title--sticked {
-          font-size: 32px;
-          padding: 14px 140px 14px 140px; } }
+      padding: 13px 0 27px 24px;
+      font-family: "MyriadPro-Light";
+      color: #333;
+      display: none; }
+      .tabs .tabs__body .tabs__content .tabs__title--sticked {
+        position: fixed;
+        font-size: 32px;
+        top: 0;
+        width: 100%;
+        z-index: 11;
+        background: rgba(255, 255, 255, 0.97); }
+      @media (min-width: 1025px) {
+        .tabs .tabs__body .tabs__content .tabs__title {
+          display: block;
+          padding-left: 116px;
+          padding-right: 116px; } }
+      @media (min-width: 1440px) {
+        .tabs .tabs__body .tabs__content .tabs__title {
+          padding: 35px 140px 41px 140px;
+          font-size: 52px; }
+          .tabs .tabs__body .tabs__content .tabs__title--sticked {
+            font-size: 32px;
+            padding: 14px 140px 14px 140px; } }
 
 .twentytwenty-container {
   z-index: 0;

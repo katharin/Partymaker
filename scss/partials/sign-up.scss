@@ -84,14 +84,14 @@
   }
 }
 
-.footer--sign-up {
+.footer.footer--sign-up {
   border-top: 1px solid $xdarkGray;
   background: $xlightGray;
   text-align: right;
   padding: 10px;
   position: relative;
   height: 44px;
-  z-index: -1;
+  z-index: 0;
   margin-top: -44px;
 
   @include screen(tablet) {
@@ -186,6 +186,7 @@
       }
 
       &--prev {
+        left: 9%;
         padding-left: 26px;
 
         &:before {
