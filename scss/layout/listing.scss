@@ -50,10 +50,12 @@
     overflow: hidden;
 
     img {
-      width: 100%;
+      min-width: 100%;
+      width: auto;
       height: auto;
       position: absolute;
       z-index: 0;
+      max-width: none;
     }
 
     @include screen(tablet) {
